@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "Generateur de citations",
   "description":"Génère aléatoirement des citations",
+  "version":"1.0",
   "icons":{
     "16":"images/icone_citation16.png",
     "32":"images/icone_citation32.png",
