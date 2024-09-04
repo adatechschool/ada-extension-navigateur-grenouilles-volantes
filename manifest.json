@@ -3,19 +3,20 @@
   "name": "Generateur de citations",
   "description":"Génère aléatoirement des citations",
   "icons":{
-    "16":"images/icon-16.png",
-    "32":"images/icon-32.png",
-    "48":"images/icon-48.png",
-    "128":"images/icon-128.png"
+    "16":"images/icone_citation16.png",
+    "32":"images/icone_citation32.png",
+    "48":"images/icone_citation64.png",
+    "128":"images/icone_citation128.png"
   },
     
     "action":{
       "default_icon": {
-        "16":  "images/icon-16.png",
-        "32":  "images/icon-32.png",
-        "48":  "images/icon-48.png",
-        "128": "images/icon-128.png"
-      }
+        "16":  "iicone_citation16.png",
+        "32":  "images/icone_citation32.png",
+        "48":  "images/icone_citation64.png",
+        "128": "images/icone_citation128.png"
+      },
+      "default_popup":"popup.html"
 
     }
   }
