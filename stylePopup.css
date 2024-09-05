@@ -1,0 +1,67 @@
+/* Import des fonts*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Merienda:wght@300..900&display=swap');
+
+
+
+body{
+  width: 500px;
+  height: 10em;
+  outline: none; 
+  border: none;
+
+  
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px black solid;
+/*   -webkit-border-top-right-radius: 25px;
+  -webkit-border-bottom-left-radius: 25px;
+  -moz-border-radius-topright: 25px;
+  -moz-border-radius-bottomleft: 25px; */
+border-top-right-radius: 25px;
+border-bottom-left-radius: 25px;
+background-color: #f7ede2;
+
+}
+
+button{
+  font-family: "Gulzar", serif;
+  /* font-optical-sizing: auto; */
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 60px;
+  background-color: #1c5e58;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 7px 8px 21px -6px rgba(0,0,0,0.62); 
+  box-shadow: 7px 8px 21px -6px rgba(0,0,0,0.62);
+/*   text-shadow: 
+  -1px -1px 0px black, 
+  1px -1px 0px black,  
+  -1px 1px 0px black,  
+  1px 1px 0px black;   
+   */
+}
+
+#citation{
+  font-family: "Merienda", cursive;
+  /* font-optical-sizing: auto; */
+  font-size: 1.5rem;
+  margin: 20px 5px;
+  padding: auto;
+  text-align: center;
+  color: #1c5e58;
+
+
+}
