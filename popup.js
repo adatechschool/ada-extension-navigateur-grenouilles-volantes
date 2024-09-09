@@ -5,23 +5,32 @@
 
 fetch(chrome.runtime.getURL('quotes.json'))
   .then(function(response) {
+    /* console.log(response); */
     return response.json();
   })
   .then(function(data) {
     console.log(data);  // Ceci affichera l'objet JSON dans la console
+   
+    afficher(data);
+   //continuer le math.random+
+    console.log(data.quotes[2].quote, data.quotes[2].author);
     return(data);
+    
   })
+  
   .catch(function(error) {
     console.error("Erreur lors du chargement du fichier JSON : ", error);
   });
+  
 
-
-function afficher() {
-
-  document.getElementById("citation").popup.innerHTML= "<p></p>";
+function afficher(dataFetch) {
+  //let idQuote = donneesJson.q ;
+  console.log("qu'affiche tu?");
+  document.getElementById("citation").innerHTML= dataFetch.quotes[2].quote;
+  document.getElementById("auteur").innerHTML= dataFetch.quotes[2].author;
 
 }
-afficher();
+
 
 document.getElementById("genere").addEventListener('click', afficher);
 
@@ -32,7 +41,7 @@ document.getElementById("genere").addEventListener('click', afficher);
 
 
 //On fait un fetch sur notre fichier json
-const local = "quotes.json";
+/* const local = "quotes.json";
 
 async function recupererCitation () {
   const requete = await fetch(local, {
@@ -56,4 +65,4 @@ function afficher(){
 }
 
 afficher();
-document.getElementById("genere").addEventListener('click', afficher);
+document.getElementById("genere").addEventListener('click', afficher); */
