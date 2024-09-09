@@ -18,6 +18,15 @@
         "128": "images/icone_citation128.png"
       },
       "default_popup":"popup.html"
+    },
 
-    }
+    
+    "web_accessible_ressources":[
+      {
+        "ressources":[
+          "quotes.json"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ]
   }
