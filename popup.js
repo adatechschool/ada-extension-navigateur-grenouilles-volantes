@@ -13,7 +13,7 @@ fetch(chrome.runtime.getURL('quotes.json'))
    
     afficher(data);
    //continuer le math.random+
-    console.log(data.quotes[2].quote, data.quotes[2].author);
+    console.log("citation albert einstein : ", data.quotes[2].quote, data.quotes[2].author);
     return(data);
     
   })
@@ -26,8 +26,11 @@ fetch(chrome.runtime.getURL('quotes.json'))
 function afficher(dataFetch) {
   //let idQuote = donneesJson.q ;
   console.log("qu'affiche tu?");
-  document.getElementById("citation").innerHTML= dataFetch.quotes[2].quote;
-  document.getElementById("auteur").innerHTML= dataFetch.quotes[2].author;
+
+  let randomId = Math.floor(Math.random() * dataFetch.quotes.length);
+  console.log(randomId);
+  document.getElementById("citation").innerHTML= dataFetch.quotes[randomId].quote;
+  document.getElementById("auteur").innerHTML= dataFetch.quotes[randomId].author;
 
 }
 
