@@ -2,6 +2,7 @@
 
 // On transforme le chemin relatif de notre fichier json en URL afin de pouvoir effectuer un fetch dessus
 
+let allQuotes;
 
 fetch(chrome.runtime.getURL('quotes.json'))
   .then(function(response) {
@@ -11,6 +12,8 @@ fetch(chrome.runtime.getURL('quotes.json'))
   .then(function(data) {
     console.log(data);  // Ceci affichera l'objet JSON dans la console
    
+    allQuotes = data;
+    console.log(allQuotes);
     afficher(data);
    //continuer le math.random+
     console.log("citation albert einstein : ", data.quotes[2].quote, data.quotes[2].author);
@@ -24,6 +27,11 @@ fetch(chrome.runtime.getURL('quotes.json'))
   
 
 function afficher(dataFetch) {
+  if(dataFetch === undefined){
+    console.error("Paramètre dataFetch de la fonction afficher ne doit pas être undefined ");
+    return;
+  }
+  console.log(dataFetch);
   //let idQuote = donneesJson.q ;
   console.log("qu'affiche tu?");
 
@@ -35,7 +43,7 @@ function afficher(dataFetch) {
 }
 
 
-document.getElementById("genere").addEventListener('click', afficher);
+document.getElementById("genere").addEventListener('click', afficher(allQuotes));
 
 
 

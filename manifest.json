@@ -21,9 +21,9 @@
     },
 
     
-    "web_accessible_ressources":[
+    "web_accessible_resources":[
       {
-        "ressources":[
+        "resources":[
           "quotes.json"
         ],
         "matches": ["<all_urls>"]

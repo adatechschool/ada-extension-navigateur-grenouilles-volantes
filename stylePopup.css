@@ -21,12 +21,12 @@ div{
   flex-direction: column;
   align-items: center;
   border: 1px black solid;
-/*   -webkit-border-top-right-radius: 25px;
-  -webkit-border-bottom-left-radius: 25px;
-  -moz-border-radius-topright: 25px;
-  -moz-border-radius-bottomleft: 25px; */
-border-top-right-radius: 25px;
-border-bottom-left-radius: 25px;
+  -webkit-border-top-left-radius: 25px;
+  -webkit-border-bottom-right-radius: 25px;
+  -moz-border-radius-topleft: 25px;
+  -moz-border-radius-bottomright: 25px;
+border-top-left-radius: 25px;
+border-bottom-right-radius: 25px;
 background-color: #f7ede2;
 
 }
@@ -62,4 +62,9 @@ button{
   padding: auto;
   text-align: center;
   color: #1c5e58;
+}
+
+#auteur {
+  font-family: Garamond, sans-serif;
+  font-size: 1.5em;
 }
