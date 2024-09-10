@@ -20,7 +20,7 @@ div{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px black solid;
+  border: 3px black solid;
   -webkit-border-top-left-radius: 25px;
   -webkit-border-bottom-right-radius: 25px;
   -moz-border-radius-topleft: 25px;

@@ -11,7 +11,7 @@ fetch(chrome.runtime.getURL('quotes.json'))
   })
   .then(function(data) {
     console.log(data);  // Ceci affichera l'objet JSON dans la console
-   
+
     allQuotes = data;
     console.log(allQuotes);
     afficher(data);
@@ -43,7 +43,9 @@ function afficher(dataFetch) {
 }
 
 
-document.getElementById("genere").addEventListener('click', afficher(allQuotes));
+document.getElementById("genere").addEventListener('click', function() {
+  afficher(allQuotes);
+});
 
 
 
