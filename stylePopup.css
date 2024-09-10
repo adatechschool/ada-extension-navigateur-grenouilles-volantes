@@ -25,8 +25,8 @@ div{
   -webkit-border-bottom-right-radius: 25px;
   -moz-border-radius-topleft: 25px;
   -moz-border-radius-bottomright: 25px;
-border-top-left-radius: 25px;
-border-bottom-right-radius: 25px;
+border-top-left-radius: 80px;
+border-bottom-right-radius: 80px;
 background-color: #f7ede2;
 
 }
@@ -34,31 +34,45 @@ background-color: #f7ede2;
 button{
   font-family: "Gulzar", serif;
   /* font-optical-sizing: auto; */
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
-  width: 250px;
+  margin-bottom: 30px;
+  width: 200px;
   height: 60px;
   background-color: #1c5e58;
   color: #fff;
   border: none;
   border-radius: 15px;
-  -webkit-box-shadow: 7px 8px 21px -6px rgba(0,0,0,0.62); 
-  box-shadow: 7px 8px 21px -6px rgba(0,0,0,0.62);
-/*   text-shadow: 
-  -1px -1px 0px black, 
-  1px -1px 0px black,  
-  -1px 1px 0px black,  
-  1px 1px 0px black;   
-   */
+/*  -webkit-box-shadow: 7px 8px 21px -6px rgba(0,0,0,0.62); 
+  box-shadow: 7px 8px 21px -6px rgba(0,0,0,0.62); */
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  box-shadow: 6px 6px 12px #558B71, -8px -8px 12px #fffcf2;
+
+}
+
+button:hover {
+  background-color: #558B71;
+  box-shadow: 0 0 20px #fffcf2;
+  transform: scale(1.1);
+}
+
+
+button:active {
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+/*   box-shadow: inset 4px 4px 12px #558B71, inset -4px -4px 12px #fffcf2; */
 }
 
 #citation{
   font-family: "Merienda", cursive;
   /* font-optical-sizing: auto; */
-  font-size: 1.5rem;
-  margin: 20px 5px;
+  font-size: 1.2rem;
+  margin: 50px 30px 20px 30px;
   padding: auto;
   text-align: center;
   color: #1c5e58;
