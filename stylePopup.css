@@ -8,15 +8,19 @@
 
 
 body{
-  width: 500px;
-  height: 10em;
+  /* width: 500px;
+  height: 10em; */
+  width: 50rem;
+  /* height: 100%;  */
   outline: none; 
   border: none;
 
   
 }
 
+/* Conteneur de la popup */
 div{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,15 +35,26 @@ background-color: #f7ede2;
 
 }
 
+/* div qui contient les 3 boutons */
+.buttons{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: none;
+
+}
+
+
 button{
   font-family: "Gulzar", serif;
   /* font-optical-sizing: auto; */
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  width: 200px;
-  height: 60px;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  width: 8rem;
+  height: 3rem;
   background-color: #1c5e58;
   color: #fff;
   border: none;
@@ -72,7 +87,7 @@ button:active {
   font-family: "Merienda", cursive;
   /* font-optical-sizing: auto; */
   font-size: 1.2rem;
-  margin: 50px 30px 20px 30px;
+  margin: 1.6em 2em 1em 2em ;
   padding: auto;
   text-align: center;
   color: #1c5e58;
@@ -81,4 +96,12 @@ button:active {
 #auteur {
   font-family: Garamond, sans-serif;
   font-size: 1.5em;
+}
+
+.indications{
+  font-family: Garamond, sans-serif;
+  font-size: 1.4em;
+  margin: 1.5em 1em 0em 1em;
+  color: #1c5e58;
+  text-align: center;
 }

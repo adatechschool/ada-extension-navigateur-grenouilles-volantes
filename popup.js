@@ -43,7 +43,7 @@ function afficher(dataFetch) {
 }
 
 
-document.getElementById("genere").addEventListener('click', function() {
+document.getElementById("aleatoire").addEventListener('click', function() {
   afficher(allQuotes);
 });
 
