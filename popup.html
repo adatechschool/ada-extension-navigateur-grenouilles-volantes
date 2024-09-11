@@ -8,15 +8,21 @@
       <title>Citéo</title>
     </head>
   <body>
-    <div>
+    <div class="contener">
       <p id="citation"></p>
       <p id="auteur">" "</p>
 
-      <p class="indications">Choisissez entre les catégories Aléatoire, Sagesse et Motivation pour afficher une nouvelle citation : </p>
+      <p class="indications">Pour afficher une nouvelle citation cliquez sur le thème de votre choix ou entrez un mot-clé : </p>
       <div class="buttons">
-        <button id="aleatoire">Aléatoire</button>
-        <button id="sagesse">Sagesse</button>
-        <button id="motivation">Motivation</button>
+        <div class="input">
+            <!-- <label for="name">Afficher une citation par mot-clé:</label> -->
+            <input type="text" id="name" name="name" required placeholder="Entrez un mot-clé" />
+            <button class="ok">OK</button>
+        </div>
+
+        <button id="aleatoire">Thème Aléatoire</button>
+        <button id="sagesse">Thème Sagesse</button>
+        <button id="motivation">Thème Motivation</button>
       </div>
   
 
