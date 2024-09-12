@@ -10,7 +10,13 @@ let motivation = [];
 //fonction de déclenchement du bouton ok (fonctionnalité recherche) 
 document.getElementById("ok").addEventListener('click', function() {
 let mot = champRecherche.value;
-cherche(mot)
+  if (mot.length != 0) {
+    cherche(mot)
+  } else {
+    document.getElementById("citation").innerHTML = "Mais tu n'as écrit aucun mot?! Bah écris un mot...."
+    document.getElementById("auteur").innerHTML = "☼ Célia, Tiphaine et Térence ☼"
+  }
+
 });
 
 
